@@ -21,26 +21,25 @@ I enjoy solving problems and turning ideas into working code. My recent projects
 I am particularly interested in full-stack development and learning how front-end and back-end systems work together. My goal is to gain internship experience where I can continue improving my skills and contribute to real-world projects.`,
 
     projects: [
-      {
-        name: 'Quiz Game with Database',
-        description:
-          'Python-based quiz game that stores questions and scores using a database system.',
-        link: '',
-      },
-      {
-        name: 'Hornworm Growth Experiment Analysis',
-        description:
-          'Data analysis project tracking growth patterns using Python and statistics.',
-        link: '',
-      },
-      {
-        name: 'GitHub Portfolio Website',
-        description:
-          'Personal portfolio built using Gatsby and deployed on GitHub Pages.',
-        link: 'https://github.com/damiobakoya',
-      },
-    ],
-
+  {
+    name: 'Quiz Game with Database',
+    description:
+      'Python-based quiz game that allows users to answer questions and stores scores using a database system. Built to practice backend logic, data storage, and user interaction.',
+    link: '',
+  },
+  {
+    name: 'Campus Sports Schedule Website',
+    description:
+      'Web application designed to help students and staff view sports events and college matches happening on campus. Displays schedules in a clear and organized format for easy access.',
+    link: '',
+  },
+  {
+    name: 'Web Scraping Data Collection Project',
+    description:
+      'Python web scraping project that extracts and organizes data from online sources. Focused on collecting structured information and handling real-world messy data.',
+    link: '',
+  },
+],
     experience: [
       {
         name: 'Oakland City University',
@@ -52,7 +51,7 @@ I am particularly interested in full-stack development and learning how front-en
     skills: [
       {
         name: 'Programming Languages',
-        description: 'Python, JavaScript, HTML, CSS, SQL',
+        description: 'Python, JavaScript, HTML, CSS, SQL, C',
       },
       {
         name: 'Tools & Technologies',
