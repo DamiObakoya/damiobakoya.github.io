@@ -6,44 +6,28 @@ module.exports = {
 
     title: `Dami Obakoya | Computer Science Student`,
 
-    description: `Computer Science student passionate about software development, web applications, and solving real-world problems through code.`,
+    description:
+      'Computer Science student passionate about software development, web applications, and solving real-world problems through code.',
 
     author: `@damiobakoya`,
 
     github: `https://github.com/damiobakoya`,
 
-    linkedin: `https://www.linkedin.com/in/your-link-here`,
+    linkedin: `https://www.linkedin.com/in/oluwadamilola-obakoya-b9219b3aa/`,
 
-    about: `I am a Computer Science student at Oakland City University with a strong interest in software development and building practical applications. I have experience working with Python, JavaScript, HTML, CSS, and SQL through coursework and personal projects.
+    about: `I am a Computer Science student at Oakland City University with an interest in software development, web applications, and data-driven solutions.
 
-I enjoy solving problems and turning ideas into working code. My recent projects include building a quiz game with a database backend and working on data analysis using Python.
+I enjoy building projects that solve real problems and help me improve my programming skills. Through my coursework and personal projects, I have worked with Python, JavaScript, HTML, CSS, and SQL.
 
-I am particularly interested in full-stack development and learning how front-end and back-end systems work together. My goal is to gain internship experience where I can continue improving my skills and contribute to real-world projects.`,
+My experience includes building a quiz game with a database backend, a campus sports schedule website, and a web scraping project for collecting and organizing data.
 
-    projects: [
-  {
-    name: 'Quiz Game with Database',
-    description:
-      'Python-based quiz game that allows users to answer questions and stores scores using a database system. Built to practice backend logic, data storage, and user interaction.',
-    link: '',
-  },
-  {
-    name: 'Campus Sports Schedule Website',
-    description:
-      'Web application designed to help students and staff view sports events and college matches happening on campus. Displays schedules in a clear and organized format for easy access.',
-    link: '',
-  },
-  {
-    name: 'Web Scraping Data Collection Project',
-    description:
-      'Python web scraping project that extracts and organizes data from online sources. Focused on collecting structured information and handling real-world messy data.',
-    link: '',
-  },
-],
+I am focused on improving my full-stack development skills and learning how to build scalable and efficient applications. My goal is to gain internship experience where I can apply my skills in real-world environments and continue growing as a developer.`,
+
     experience: [
       {
         name: 'Oakland City University',
-        description: 'Computer Science Student',
+        description:
+          'Bachelor of Science in Computer Science | Expected May 2027 | Relevant Coursework: Data Structures, Database Systems, Web Development, Software Engineering, Computer Networks',
         link: '',
       },
     ],
@@ -51,15 +35,44 @@ I am particularly interested in full-stack development and learning how front-en
     skills: [
       {
         name: 'Programming Languages',
-        description: 'Python, JavaScript, HTML, CSS, SQL, C',
+        description: 'Python, JavaScript, Java, SQL, HTML, CSS',
       },
       {
-        name: 'Tools & Technologies',
-        description: 'Git, GitHub, VS Code, Node.js',
+        name: 'Web Development',
+        description: 'React, Node.js, Express, Tailwind CSS',
       },
       {
-        name: 'Interests',
-        description: 'Web Development, Data Analysis, Full-Stack Development',
+        name: 'Tools & Platforms',
+        description: 'Git, GitHub, VS Code, Linux',
+      },
+      {
+        name: 'Databases',
+        description: 'MySQL, PostgreSQL, MongoDB',
+      },
+      {
+        name: 'Concepts',
+        description: 'REST APIs, OOP, Agile Development, Debugging',
+      },
+    ],
+
+    projects: [
+      {
+        name: 'Quiz Game with Database',
+        description:
+          'Python-based quiz game that allows users to answer questions and stores scores using a database system. Built to practice backend logic and data handling.',
+        link: '',
+      },
+      {
+        name: 'Campus Sports Schedule Website',
+        description:
+          'Web application that displays college sports matches and events on campus. Helps students easily view schedules and upcoming games.',
+        link: '',
+      },
+      {
+        name: 'Web Scraping Data Project',
+        description:
+          'Python project that extracts data from websites and organizes it into structured formats for analysis and reporting.',
+        link: '',
       },
     ],
   },
@@ -85,19 +98,8 @@ I am particularly interested in full-stack development and learning how front-en
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
-          {
-            resolve: `gatsby-remark-images`,
-            options: {
-              maxWidth: 590,
-              wrapperStyle: `margin: 0 0 30px;`,
-            },
-          },
-          {
-            resolve: `gatsby-remark-responsive-iframe`,
-            options: {
-              wrapperStyle: `margin-bottom: 1.0725rem`,
-            },
-          },
+          `gatsby-remark-images`,
+          `gatsby-remark-responsive-iframe`,
           `gatsby-remark-prismjs`,
           `gatsby-remark-copy-linked-files`,
           `gatsby-remark-smartypants`,
@@ -166,7 +168,7 @@ I am particularly interested in full-stack development and learning how front-en
               }
             `,
             output: '/rss.xml',
-            title: "Dami Obakoya RSS Feed",
+            title: 'Dami Obakoya RSS Feed',
           },
         ],
       },
