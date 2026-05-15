@@ -1,78 +1,70 @@
 module.exports = {
   siteMetadata: {
-    // Site URL for when it goes live
-    siteUrl: `https://monumental-chimera-b1ace3.netlify.app/`,
-    // Your Name
-    name: 'Ryan Fitzgerald',
-    // Main Site Title
-    title: `Ryan Fitzgerald | Full-Stack Developer`,
-    // Description that goes under your name in main bio
-    description: `Lorem ipsum dolor sit amet consectetur adipisicing elit, ipsum.`,
-    // Optional: Twitter account handle
-    author: `@rfitzio`,
-    // Optional: Github account URL
-    github: `https://github.com/RyanFitzgerald`,
-    // Optional: LinkedIn account URL
-    linkedin: `https://github.com/RyanFitzgerald/devfolio`,
-    // Content of the About Me section
-    about: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus perferendis porro cumque ea error ab voluptatem. Temporibus adipisci exercitationem similique itaque quibusdam laudantium, qui molestiae quas, aut amet animi id.`,
-    // Optional: List your projects, they must have `name` and `description`. `link` is optional.
+    siteUrl: `https://damiobakoya.github.io/`,
+
+    name: 'Dami Obakoya',
+
+    title: `Dami Obakoya | Computer Science Student`,
+
+    description: `Computer Science student passionate about software development, web applications, and solving real-world problems through code.`,
+
+    author: `@damiobakoya`,
+
+    github: `https://github.com/damiobakoya`,
+
+    linkedin: `https://www.linkedin.com/in/your-link-here`,
+
+    about: `I am a Computer Science student at Oakland City University with a strong interest in software development and building practical applications. I have experience working with Python, JavaScript, HTML, CSS, and SQL through coursework and personal projects.
+
+I enjoy solving problems and turning ideas into working code. My recent projects include building a quiz game with a database backend and working on data analysis using Python.
+
+I am particularly interested in full-stack development and learning how front-end and back-end systems work together. My goal is to gain internship experience where I can continue improving my skills and contribute to real-world projects.`,
+
     projects: [
       {
-        name: 'Devfolio',
+        name: 'Quiz Game with Database',
         description:
-          'A zero-config and blazing fast personal site + blog built with GatsbyJs and TailwindCSS',
-        link: 'https://github.com/RyanFitzgerald/devfolio',
+          'Python-based quiz game that stores questions and scores using a database system.',
+        link: '',
       },
       {
-        name: 'ExtensionKit',
+        name: 'Hornworm Growth Experiment Analysis',
         description:
-          'Kit to jump-start your Chrome extension projects with a variety of battle-tested starter templates',
-        link: 'https://extensionkit.io/?ref=devfolio',
+          'Data analysis project tracking growth patterns using Python and statistics.',
+        link: '',
       },
       {
-        name: 'Another Cool Project',
+        name: 'GitHub Portfolio Website',
         description:
-          'Lorem ipsum dolor sit amet consectetur adipisicing elit ducimus perferendis',
-        link: 'https://github.com/RyanFitzgerald/devfolio',
+          'Personal portfolio built using Gatsby and deployed on GitHub Pages.',
+        link: 'https://github.com/damiobakoya',
       },
     ],
-    // Optional: List your experience, they must have `name` and `description`. `link` is optional.
+
     experience: [
       {
-        name: 'Acme Corp',
-        description: 'Full-Stack Developer, February 2020 - Present',
-        link: 'https://github.com/RyanFitzgerald/devfolio',
-      },
-      {
-        name: 'Globex Corp',
-        description: 'Full-Stack Developer, December 2017 - February 2020',
-        link: 'https://github.com/RyanFitzgerald/devfolio',
-      },
-      {
-        name: 'Hooli',
-        description: 'Full-Stack Developer, May 2015 - December 2017',
-        link: 'https://github.com/RyanFitzgerald/devfolio',
+        name: 'Oakland City University',
+        description: 'Computer Science Student',
+        link: '',
       },
     ],
-    // Optional: List your skills, they must have `name` and `description`.
+
     skills: [
       {
-        name: 'Languages & Frameworks',
-        description:
-          'JavaScript (ES6+), Golang, Node.js, Express.js, React, Ruby on Rails, PHP',
+        name: 'Programming Languages',
+        description: 'Python, JavaScript, HTML, CSS, SQL',
       },
       {
-        name: 'Databases',
-        description: 'MongoDB, PostreSQL, MySQL',
+        name: 'Tools & Technologies',
+        description: 'Git, GitHub, VS Code, Node.js',
       },
       {
-        name: 'Other',
-        description:
-          'Docker, Amazon Web Services (AWS), CI / CD, Microservices, API design, Agile / Scrum',
+        name: 'Interests',
+        description: 'Web Development, Data Analysis, Full-Stack Development',
       },
     ],
   },
+
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
@@ -149,7 +141,9 @@ module.exports = {
                   date: edge.node.frontmatter.date,
                   url: site.siteMetadata.siteUrl + edge.node.fields.slug,
                   guid: site.siteMetadata.siteUrl + edge.node.fields.slug,
-                  custom_elements: [{ 'content:encoded': edge.node.html }],
+                  custom_elements: [
+                    { 'content:encoded': edge.node.html },
+                  ],
                 });
               });
             },
@@ -173,7 +167,7 @@ module.exports = {
               }
             `,
             output: '/rss.xml',
-            title: "Your Site's RSS Feed",
+            title: "Dami Obakoya RSS Feed",
           },
         ],
       },
@@ -181,17 +175,17 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: `ADD YOUR TRACKING ID HERE`, // Optional Google Analytics
+        trackingId: `ADD YOUR TRACKING ID HERE`,
       },
     },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `devfolio`,
-        short_name: `devfolio`,
+        name: `dami-portfolio`,
+        short_name: `portfolio`,
         start_url: `/`,
         background_color: `#663399`,
-        theme_color: `#663399`, // This color appears on mobile
+        theme_color: `#663399`,
         display: `minimal-ui`,
         icon: `src/images/icon.png`,
       },
